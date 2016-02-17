@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07beac0d-a08a-4c7c-a182-bdc65b964ae7" name="Default" comment="Fixed route">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
+    <list default="true" id="07beac0d-a08a-4c7c-a182-bdc65b964ae7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,7 +242,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455705381851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pages controller add">
+      <created>1455709610137</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1455709610137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -278,7 +281,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed route" />
+    <MESSAGE value="Pages controller add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages controller add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

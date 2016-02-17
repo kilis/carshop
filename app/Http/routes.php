@@ -14,9 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/test', function () {
-    return view('pages.test');
-});
+Route::get('test', [
+    'as' => 'test',
+    'uses' => 'PagesController@getTest'
+]);
 
 /*
 |--------------------------------------------------------------------------

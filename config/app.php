@@ -160,6 +160,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 		Bestmomo\Scafold\ScafoldServiceProvider::class,
+		'Codesleeve\LaravelStapler\Providers\L5ServiceProvider',
+		'Mmanos\Search\SearchServiceProvider',
 		/*
 		 * Acacha AdminLTE template provider
 		 */
@@ -214,6 +216,7 @@ return [
 		'Form'     => Collective\Html\FormFacade::class,
 		'HTML'     => Collective\Html\HtmlFacade::class,
 		'BootForm' => Watson\BootstrapForm\Facades\BootstrapForm::class,
+		'Search' => 'Mmanos\Search\Facade',
 		/*
 		 * Acacha AdminLTE template alias
 		 */

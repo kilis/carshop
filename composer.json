@@ -10,7 +10,12 @@
 		"bestmomo/scafold": "dev-master",
 		"lavary/laravel-menu": "dev-master",
         "watson/bootstrap-form": "^1.0",
-        "acacha/admin-lte-template-laravel": "2.*"
+        "acacha/admin-lte-template-laravel": "2.*",
+        "codesleeve/laravel-stapler": "^1.0",
+        "mmanos/laravel-search": "^1.0",
+		"zendframework/zendsearch" : "dev-master",
+		"elasticsearch/elasticsearch" : "dev-master",
+		"algolia/algoliasearch-client-php" : "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

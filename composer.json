@@ -7,7 +7,10 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-		"bestmomo/scafold": "dev-master"
+		"bestmomo/scafold": "dev-master",
+		"lavary/laravel-menu": "dev-master",
+        "watson/bootstrap-form": "^1.0",
+        "acacha/admin-lte-template-laravel": "2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

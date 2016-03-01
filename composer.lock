@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e0b3cedcbb907db9b082515fa7b3d518",
-    "content-hash": "d587fdd0c3e19e73eb979007c0f198b3",
+    "hash": "c0ad37ddbe8674447693b3be3207f55b",
+    "content-hash": "951226b8d6b8f32cd8ca95ca5c43fe3c",
     "packages": [
         {
             "name": "acacha/admin-lte-template-laravel",
@@ -709,6 +709,63 @@
             "time": "2015-04-20 18:58:01"
         },
         {
+            "name": "jenssegers/date",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "a796be8acfe789592611922ec1b7929c269e7aaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/a796be8acfe789592611922ec1b7929c269e7aaf",
+                "reference": "a796be8acfe789592611922ec1b7929c269e7aaf",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0",
+                "php": ">=5.4",
+                "symfony/translation": "^2.0|^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2016-02-21 11:06:03"
+        },
+        {
             "name": "jeremeamia/SuperClosure",
             "version": "2.2.0",
             "source": {
@@ -1207,6 +1264,61 @@
                 "psr-3"
             ],
             "time": "2016-03-01 18:00:40"
+        },
+        {
+            "name": "mpociot/vat-calculator",
+            "version": "1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpociot/vat-calculator.git",
+                "reference": "5b3041e307cbb184cfa5d41f25b54045f583b0d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpociot/vat-calculator/zipball/5b3041e307cbb184cfa5d41f25b54045f583b0d5",
+                "reference": "5b3041e307cbb184cfa5d41f25b54045f583b0d5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "illuminate/support": "~5.0",
+                "illuminate/validation": "~5.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers/Controller.php"
+                ],
+                "psr-0": {
+                    "Mpociot\\VatCalculator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "EU VAT calculation, the way it should be.",
+            "keywords": [
+                "EU Moss",
+                "VAT ID",
+                "cashier",
+                "tax",
+                "tax calculation",
+                "vat",
+                "vat calculation"
+            ],
+            "time": "2016-02-10 14:10:55"
         },
         {
             "name": "mtdowling/cron-expression",

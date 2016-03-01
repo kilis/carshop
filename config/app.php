@@ -162,6 +162,8 @@ return [
 		Bestmomo\Scafold\ScafoldServiceProvider::class,
 		'Codesleeve\LaravelStapler\Providers\L5ServiceProvider',
 		'Mmanos\Search\SearchServiceProvider',
+		'Jenssegers\Date\DateServiceProvider',
+		Mpociot\VatCalculator\VatCalculatorServiceProvider::class,
 		/*
 		 * Acacha AdminLTE template provider
 		 */
@@ -221,6 +223,8 @@ return [
 		 * Acacha AdminLTE template alias
 		 */
 		'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+		'VatCalculator' => Mpociot\VatCalculator\Facades\VatCalculator::class,
+		'Date' => Jenssegers\Date\Date::class,
 
     ],
 

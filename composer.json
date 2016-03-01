@@ -15,7 +15,9 @@
         "mmanos/laravel-search": "^1.0",
 		"zendframework/zendsearch" : "dev-master",
 		"elasticsearch/elasticsearch" : "dev-master",
-		"algolia/algoliasearch-client-php" : "dev-master"
+		"algolia/algoliasearch-client-php" : "dev-master",
+        "mpociot/vat-calculator": "^1.6",
+        "jenssegers/date": "^3.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

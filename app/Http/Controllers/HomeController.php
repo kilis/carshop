@@ -35,4 +35,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+	public function addManifactures()
+    {
+        return view('admin.addManif');
+    }
+	public function addParts()
+    {
+        return view('admin.addParts');
+    }
+	public function addCategory()
+    {
+        return view('admin.addCategory');
+    }
 }

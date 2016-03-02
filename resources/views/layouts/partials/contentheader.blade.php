@@ -6,6 +6,6 @@
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li class="active">@yield('contentheader_title', 'Here')</li>
     </ol>
 </section>

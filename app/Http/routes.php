@@ -31,9 +31,10 @@ Laravel dynamic menu
 */
 Menu::make('MyNavBar', function($menu){
 
-  $menu->add('Home','#');
-  $menu->add('test');
-  $menu->add('About',  URL::route('contact'));
+  $menu->add('Sākums','./');
+  $menu->add('Ražotāji');
+  $menu->add('Katalogs');
+  $menu->add('Kontakti', URL::route('contact'));
 
 });
 /*
@@ -50,6 +51,9 @@ Menu::make('MyNavBar', function($menu){
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
     Route::get('/home', 'HomeController@index');
+    Route::get('/addManifactures', 'HomeController@addManifactures');
+    Route::get('/addParts', 'HomeController@addParts');
+    Route::get('/addCategory', 'HomeController@addCategory');
     Route::get('/', function () {
         return view('welcome');
     });

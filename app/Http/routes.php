@@ -14,14 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/f', function () {
-    return view('pages.contact');
-});
 Route::get('test', [
     'as' => 'test',
     'uses' => 'PagesController@getTest'
 ]);
-Route::get('contact', [
+Route::get('about/contact', [
     'as' => 'contact',
     'uses' => 'PagesController@getContact'
 ]);

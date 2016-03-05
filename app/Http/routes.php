@@ -48,6 +48,7 @@ Menu::make('MyNavBar', function($menu){
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
     Route::get('/home', 'HomeController@index');
+    Route::get('/about/contact', 'HomeController@getContact');
     Route::get('/addManifactures', 'HomeController@addManifactures');
     Route::get('/addParts', 'HomeController@addParts');
     Route::get('/addCategory', 'HomeController@addCategory');

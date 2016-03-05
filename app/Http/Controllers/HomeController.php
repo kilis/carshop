@@ -47,4 +47,7 @@ class HomeController extends Controller
     {
         return view('admin.addCategory');
     }
+	public function getContact(){
+        return view('pages.contact');
+    }
 }

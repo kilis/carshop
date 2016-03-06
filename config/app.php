@@ -159,6 +159,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+		
 		Bestmomo\Scafold\ScafoldServiceProvider::class,
 		'Codesleeve\LaravelStapler\Providers\L5ServiceProvider',
 		'Mmanos\Search\SearchServiceProvider',
@@ -167,7 +168,7 @@ return [
 		/*
 		 * Acacha AdminLTE template provider
 		 */
-		Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+		//Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
     ],
 

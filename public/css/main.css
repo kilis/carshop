@@ -79,7 +79,8 @@ a:after {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
-	padding-top: 60px;
+	padding-top: 5em;
+	padding-bottom: 19em;
 }
 
 #headerwrap h1 {
@@ -103,6 +104,13 @@ a:after {
 #headerwrap p {
 	text-align: left;
 	color: white
+}
+#search {
+	background-color:rgba(255, 255, 255, 0.8); 
+	height:20em; 
+	width:23em; 
+	height:10em;
+
 }
 
 /* intro Wrap */
@@ -170,4 +178,15 @@ a:after {
 #c p {
 	color: white
 }
+/* select menu for parts */
 
+#partsearch {
+	padding-top: 1em;
+	
+}
+#caryear select{
+	width: 5em;
+}
+#form_make select{
+	width: 9em;
+}

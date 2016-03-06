@@ -10,14 +10,11 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-	
+
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('test', [
-    'as' => 'test',
-    'uses' => 'PagesController@getTest'
-]);
+
 Route::get('about/contact', [
     'as' => 'contact',
     'uses' => 'PagesController@getContact'
@@ -26,6 +23,7 @@ Route::resource('contact', 'PagesController');
 /*
 Laravel dynamic menu
 */
+
 Menu::make('MyNavBar', function($menu){
 
   $menu->add('Sākums','./');
@@ -47,12 +45,15 @@ Menu::make('MyNavBar', function($menu){
 
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
+	Route::get('/', [
+    'as' => 'index',
+    'uses' => 'PartsController@index'
+	]);
     Route::get('/home', 'HomeController@index');
-    Route::get('/about/contact', 'HomeController@getContact');
     Route::get('/addManifactures', 'HomeController@addManifactures');
     Route::get('/addParts', 'HomeController@addParts');
     Route::get('/addCategory', 'HomeController@addCategory');
-    Route::get('/', function () {
-        return view('welcome');
+	Route::get('/about/contact', function () {
+        return view('pages.contact');
     });
 });

@@ -17,8 +17,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
     <script src="{{ asset('/plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
     <script src="{{ asset('/js/smoothscroll.js') }}"></script>
@@ -64,10 +64,18 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 			<div class="col-lg-12">
                 <h1>Partio auto parts</h1>
                 <h3>Get used or new parts here from dealers or individuals</h3>
-                <h3>Private	cars or comercial car parts</h3>
+                <h3>Private	or comercial car parts</h3>
             </div>
         </div>
     </div> <!--/ .container -->
+	<div id="search" class="col-lg-4 pull-right">
+	<?php //var_dump($manifactures);?>
+	{{ Form::open(['id' => 'caryear']) }}
+		{{ Form::label('year', 'Year') }}
+		{{ Form::selectYear('year', 1960, 2015,  ['class' => 'field']) }}
+		{{ Form::label('manifacture', 'Make') }}
+	{{ Form::close() }}
+	</div>
 </div><!--/ #headerwrap -->
 
 
@@ -156,8 +164,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <div id="c">
     <div class="container">
                 <p>
-            Partio All right reserved<br/>
-            <strong>Copyright &copy; 2016
+            Partio Not reserved<br/>
+            <strong>Copyleft &copy; 2016
             <br/>
              Page Created by Pushkin</a>
         </p>

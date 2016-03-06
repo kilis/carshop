@@ -73,7 +73,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 		{{ Form::label('year', 'Year') }}
 		{{ Form::selectYear('year', 1982, 2016,  ['id' => 'caryear','class' => 'field']) }}
 		{{ Form::label('manifacture', 'Make') }}
-		{!! Form::select('make_display', $carmakes, null, ['id' => 'form_make']) !!}
+		{{ Form::select('make_display', $carmakes, null, ['id' => 'form_make']) }}
+		{{ Form::label('conditon', 'Conditon') }}
+		{{ Form::select('conditon', ['New', 'Used']) }}</br>
+		{{ Form::submit('Search!', ['id' => 'search_sub', 'class' =>'btn btn-primary']) }}
 	{{ Form::close() }}
 	</div>
 </div><!--/ #headerwrap -->
@@ -109,7 +112,6 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <div id="showcase">
     <div class="container">
         <div class="row">
-            <h1 class="centered">Some Screenshots</h1>
             <br>
             <div class="col-lg-8 col-lg-offset-2">
                 <div id="carousel-example-generic" class="carousel slide">

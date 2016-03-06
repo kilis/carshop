@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c0ad37ddbe8674447693b3be3207f55b",
-    "content-hash": "951226b8d6b8f32cd8ca95ca5c43fe3c",
+    "hash": "4449de2bd27555a40b4cd770b9e8d146",
+    "content-hash": "3cdcea07845537886d145d947c173787",
     "packages": [
         {
             "name": "acacha/admin-lte-template-laravel",
-            "version": "2.0.4",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acacha/adminlte-laravel.git",
-                "reference": "7059b41f08cc3addbc79260ebb926aaa7e803cb2"
+                "reference": "92abb4b004d02aa7b93bb32d65d961569411e7c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/7059b41f08cc3addbc79260ebb926aaa7e803cb2",
-                "reference": "7059b41f08cc3addbc79260ebb926aaa7e803cb2",
+                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/92abb4b004d02aa7b93bb32d65d961569411e7c7",
+                "reference": "92abb4b004d02aa7b93bb32d65d961569411e7c7",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "template",
                 "theme"
             ],
-            "time": "2016-02-28 10:48:15"
+            "time": "2016-03-02 17:36:31"
         },
         {
             "name": "algolia/algoliasearch-client-php",
@@ -65,17 +65,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/algoliasearch-client-php.git",
-                "reference": "0dc0b02219d970ebc8c0cd338f90545ea4f8b5c7"
+                "reference": "085efc291dcde09b86c3b5a4dc6bdc2bc9e23abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/0dc0b02219d970ebc8c0cd338f90545ea4f8b5c7",
-                "reference": "0dc0b02219d970ebc8c0cd338f90545ea4f8b5c7",
+                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/085efc291dcde09b86c3b5a4dc6bdc2bc9e23abd",
+                "reference": "085efc291dcde09b86c3b5a4dc6bdc2bc9e23abd",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3.3"
+                "php": ">=5.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8 || ^5.0",
@@ -108,7 +108,7 @@
             ],
             "description": "Algolia Search API Client for PHP",
             "homepage": "https://github.com/algolia/algoliasearch-client-php",
-            "time": "2016-02-24 16:10:11"
+            "time": "2016-03-02 18:48:29"
         },
         {
             "name": "bestmomo/scafold",
@@ -462,6 +462,51 @@
                 "search"
             ],
             "time": "2016-01-22 20:19:05"
+        },
+        {
+            "name": "gloudemans/shoppingcart",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crinsane/LaravelShoppingcart.git",
+                "reference": "d2ba5aff19fc94a321611b1e9dd531c8e1800359"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crinsane/LaravelShoppingcart/zipball/d2ba5aff19fc94a321611b1e9dd531c8e1800359",
+                "reference": "d2ba5aff19fc94a321611b1e9dd531c8e1800359",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gloudemans\\Shoppingcart": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Gloudemans",
+                    "email": "Rob_Gloudemans@hotmail.com"
+                }
+            ],
+            "description": "Laravel 4 Shoppingcart",
+            "keywords": [
+                "laravel",
+                "shoppingcart"
+            ],
+            "time": "2015-02-19 14:36:24"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -2548,16 +2593,16 @@
         },
         {
             "name": "watson/bootstrap-form",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dwightwatson/bootstrap-form.git",
-                "reference": "f3cff2d98654264b29c5086ccd026b99d5e4d031"
+                "reference": "f91c45584a54a7e2098e93f3352d195e7871747c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dwightwatson/bootstrap-form/zipball/f3cff2d98654264b29c5086ccd026b99d5e4d031",
-                "reference": "f3cff2d98654264b29c5086ccd026b99d5e4d031",
+                "url": "https://api.github.com/repos/dwightwatson/bootstrap-form/zipball/f91c45584a54a7e2098e93f3352d195e7871747c",
+                "reference": "f91c45584a54a7e2098e93f3352d195e7871747c",
                 "shasum": ""
             },
             "require": {
@@ -2593,7 +2638,7 @@
                 "form",
                 "laravel"
             ],
-            "time": "2016-01-14 22:47:21"
+            "time": "2016-03-06 09:02:15"
         },
         {
             "name": "zendframework/zend-hydrator",

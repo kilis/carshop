@@ -190,3 +190,9 @@ a:after {
 #form_make select{
 	width: 9em;
 }
+#search_sub {
+	width: 6em;
+	position: absolute;
+    top: 50%;
+	right: 35%;
+}

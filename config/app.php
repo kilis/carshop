@@ -164,6 +164,7 @@ return [
 		'Codesleeve\LaravelStapler\Providers\L5ServiceProvider',
 		'Mmanos\Search\SearchServiceProvider',
 		'Jenssegers\Date\DateServiceProvider',
+		'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
 		Mpociot\VatCalculator\VatCalculatorServiceProvider::class,
 		/*
 		 * Acacha AdminLTE template provider
@@ -226,6 +227,7 @@ return [
 		'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
 		'VatCalculator' => Mpociot\VatCalculator\Facades\VatCalculator::class,
 		'Date' => Jenssegers\Date\Date::class,
+		'Cart'  => 'Gloudemans\Shoppingcart\Facades\Cart',
 
     ],
 

@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Request;
 use DB;
 use Illuminate\Http\Response;
+use App\Carmakes;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
@@ -27,7 +28,8 @@ class PartController extends Controller
     }
  
     public function newPart(){
-        return view('admin.new');
+		$carmakes = Carmakes::pluck('make_display', 'make_id');
+        return view('admin.new', ['carmakes' => $carmakes]);
     }
 	
 	public function get($file_id){
@@ -55,6 +57,10 @@ class PartController extends Controller
         $part  = new Part();
         $part->file_id=$entry->id;
         $part->name =Request::input('name');
+        $part->sku =Request::input('sku');
+        $part->make =Request::input('make');
+        $part->year =Request::input('year');
+        $part->condition =Request::input('condition');
         $part->description =Request::input('description');
         $part->price =Request::input('price');
         $part->imageurl =Request::input('imageurl');

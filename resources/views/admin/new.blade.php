@@ -23,6 +23,31 @@
  
                         </div>
                     </div>
+					<div class="form-group">
+                        <label class="col-md-3 control-label" for="sku">SKU</label>
+                        <div class="col-md-9">
+                            <input id="sku" name="sku" type="text" placeholder="Product SKU" class="form-control input-md" required="">
+ 
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-md-3 control-label" for="make">Make</label>
+                        <div class="col-md-9">
+							{{ Form::select('make', $carmakes, null, ['id' => 'make']) }}
+						</div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-md-3 control-label" for="year">Year</label>
+                        <div class="col-md-9">
+							{{ Form::selectYear('year', 1982, 2016,  ['id' => 'year','class' => 'field']) }}
+						</div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-md-3 control-label" for="condition">Condition</label>
+                        <div class="col-md-9">
+							{{ Form::select('condition', ['new' => 'New', 'used' => 'Used'], null, ['id' => 'condition']) }}</br>
+						</div>
+                    </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="textarea">Description</label>
                         <div class="col-md-9">

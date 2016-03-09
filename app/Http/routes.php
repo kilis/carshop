@@ -19,7 +19,14 @@ Route::get('about/contact', [
     'as' => 'contact',
     'uses' => 'PagesController@getContact'
 ]);
+Route::get('/parts', [
+    'as' => 'parts',
+    'uses' => 'PagesController@getParts'
+]);
+Route::get('part_img/get/{id}.notjpg', [
+	'as' => 'get_part_img', 'uses' => 'PartController@get']);
 Route::resource('contact', 'PagesController');
+Route::resource('get', 'PartController');
 /*
 Laravel dynamic menu
 */
@@ -29,6 +36,7 @@ Menu::make('MyNavBar', function($menu){
   $menu->add('Sākums','./');
   $menu->add('Ražotāji');
   $menu->add('Katalogs');
+  $menu->add('Detaļas', URL::route('parts'));
   $menu->add('Kontakti', URL::route('contact'));
 
 });
@@ -53,6 +61,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/addManifactures', 'HomeController@addManifactures');
     Route::get('/addParts', 'HomeController@addParts');
     Route::get('/addCategory', 'HomeController@addCategory');
+	Route::get('/admin/part/new', 'PartController@newPart');
+	Route::get('/admin/part', 'PartController@index');
+	Route::get('/admin/part/destroy/{id}', 'PartController@destroy');
+	Route::post('/admin/part/save', 'PartController@add');
+    Route::get('/parts', 'PagesController@getParts');
 	Route::get('/about/contact', function () {
         return view('pages.contact');
     });

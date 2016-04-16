@@ -166,10 +166,7 @@ return [
 		'Jenssegers\Date\DateServiceProvider',
 		'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
 		Mpociot\VatCalculator\VatCalculatorServiceProvider::class,
-		/*
-		 * Acacha AdminLTE template provider
-		 */
-		//Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+		Laravel\Cashier\CashierServiceProvider::class,
 
     ],
 

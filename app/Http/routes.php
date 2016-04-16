@@ -35,7 +35,6 @@ Menu::make('MyNavBar', function($menu){
 
   $menu->add('Sākums','./');
   $menu->add('Ražotāji');
-  $menu->add('Katalogs');
   $menu->add('Detaļas', URL::route('parts'));
   $menu->add('Kontakti', URL::route('contact'));
 
@@ -54,8 +53,8 @@ Menu::make('MyNavBar', function($menu){
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
 	Route::get('/', [
-    'as' => 'index',
-    'uses' => 'PartsController@index'
+		'as' => 'index',
+		'uses' => 'PartsController@index'
 	]);
     Route::get('/home', 'HomeController@index');
     Route::get('/addManifactures', 'HomeController@addManifactures');
@@ -66,6 +65,13 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/admin/part/destroy/{id}', 'PartController@destroy');
 	Route::post('/admin/part/save', 'PartController@add');
     Route::get('/parts', 'PagesController@getParts');
+	Route::get('/addProduct/{productId}', 'CartController@addItem');
+	Route::get('/removeItem/{productId}', 'CartController@removeItem');
+	Route::post('/checkout', 'OrderController@checkout');
+	Route::get('order/{orderId}', 'OrderController@viewOrder');
+	Route::get('order', 'OrderController@index');
+	Route::get('download/{orderId}/{filename}', 'OrderController@download');
+	Route::get('/cart', 'CartController@showCart');
 	Route::get('/about/contact', function () {
         return view('pages.contact');
     });

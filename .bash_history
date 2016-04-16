@@ -82,3 +82,31 @@ composer update
 composer install
 npm install stripe
 exit
+cd resources/views/
+mkdir orders
+mv orders/ order
+cp view.blade.php list.blade.php order/
+cd order/
+ls
+chmow 770 .
+chmod 770 .
+ls -l
+ls
+cd ..
+cd..
+cd ..
+ls
+cd ..
+ls
+git add .
+ls
+git status
+git commit -a
+ git config --global user.email "you@example.com"
+ git config --global user.email "killislv@gmail.com"
+ git config --global user.name "Your Name"
+ git config --global user.name "Kristaps"
+git commit -a
+git push
+git push origin
+exit

@@ -110,3 +110,48 @@ git commit -a
 git push
 git push origin
 exit
+ls -l
+composer update
+cd public/
+ls
+cd assets/
+ls
+cd css/
+wget https://github.com/enyo/dropzone/raw/master/dist/dropzone.css
+cd ..
+cd ls
+cd js/
+wget https://github.com/enyo/dropzone/blob/master/dist/dropzone.js
+ls -l
+ls
+rm dropzone.js 
+wget https://github.com/enyo/dropzone/raw/master/dist/dropzone.js
+ls
+ls -l
+chmod 700 dropzone-config.js 
+ls -l
+chmod 770 dropzone-config.js 
+ls -l
+ls
+chmod 770 uploud.js 
+cd ..
+cd css/
+chmod 770 main.css 
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd app/Http/Controllers/
+ls
+ls -l
+chmod 770 ImageController.php 
+cd ..
+cd ..
+ls
+cd ..
+ls
+composer install
+composer require intervention/image
+composer require intervention/image

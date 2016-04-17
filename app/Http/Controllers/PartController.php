@@ -11,6 +11,8 @@ use DB;
 use Illuminate\Http\Response;
 use App\Carmakes;
 
+use Carbon\Carbon;
+
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 
@@ -44,30 +46,37 @@ class PartController extends Controller
     public function add() {
  
         $file = Request::file('file');
-        $extension = $file->getClientOriginalExtension();
-        Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
- 
-        $entry = new \App\File();
-        $entry->mime = $file->getClientMimeType();
-        $entry->original_filename = $file->getClientOriginalName();
-        $entry->filename = $file->getFilename().'.'.$extension;
- 
-        $entry->save();
- 
-        $part  = new Part();
-        $part->file_id=$entry->id;
-        $part->name =Request::input('name');
-        $part->sku =Request::input('sku');
-        $part->make =Request::input('make');
-        $part->year =Request::input('year');
-        $part->condition =Request::input('condition');
-        $part->description =Request::input('description');
-        $part->price =Request::input('price');
-        $part->imageurl =Request::input('imageurl');
- 
-        $part->save();
- 
-        return redirect('/admin/part');
+		if (Request::hasFile('file')) 
+		{
+			$extension = $file->getClientOriginalExtension();
+			Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+
+			$entry = new \App\File();
+			$entry->mime = $file->getClientMimeType();
+			$entry->original_filename = $file->getClientOriginalName();
+			$entry->filename = $file->getFilename().'.'.$extension;
+			$entry->save();
+			$part  = new Part();
+			
+			$part->file_id=$entry->id;
+			
+			$part->name =Request::input('name');
+			$part->sku =Request::input('sku');
+			$part->make =Request::input('make');
+			$part->year =Request::input('year');
+			$part->condition =Request::input('condition');
+			$part->description =Request::input('description');
+			$part->price =Request::input('price');
+			$part->imageurl =Request::input('imageurl');
+			
+			if (Request::has('price')) 
+			{	
+				$part->save();
+			}
+		}
+			
+		return redirect('/admin/part');
+        
  
     }
 }

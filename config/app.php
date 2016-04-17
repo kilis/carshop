@@ -150,6 +150,8 @@ return [
 		'Lavary\Menu\ServiceProvider',
 		Collective\Html\HtmlServiceProvider::class,
 		Watson\BootstrapForm\BootstrapFormServiceProvider::class,
+		'Intervention\Image\ImageServiceProvider',
+		Sukohi\Surpass\SurpassServiceProvider::class,
 
 
         /*
@@ -218,6 +220,9 @@ return [
 		'HTML'     => Collective\Html\HtmlFacade::class,
 		'BootForm' => Watson\BootstrapForm\Facades\BootstrapForm::class,
 		'Search' => 'Mmanos\Search\Facade',
+		'Image' => 'Intervention\Image\Facades\Image',
+		'Surpass'   => Sukohi\Surpass\Facades\Surpass::class,
+		'Input' => Illuminate\Support\Facades\Input::class,
 		/*
 		 * Acacha AdminLTE template alias
 		 */

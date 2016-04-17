@@ -12,9 +12,20 @@
             <div class="panel-title">New Part</div>
         </div>
         <div class="panel-body" >
-            <form method="POST" action="/admin/part/save" class="form-horizontal" enctype="multipart/form-data" role="form">
+            <form method="POST" action="/admin/part/save" id="my-awesome-dropzone" class="form-horizontal dropzone" enctype="multipart/form-data" role="form">
                 {!! csrf_field() !!}
                 <fieldset>
+					<div class="dz-message">
+
+                </div>
+
+                <div class="fallback">
+                    <input name="file" type="file"/>
+                </div>
+
+                <div class="dropzone-previews" id="dropzonePreview"></div>
+
+                <h4 style="text-align: center;color:#428bca;">Drop images in this area  <span class="glyphicon glyphicon-hand-down"></span></h4>
                     <!-- Text input-->
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Name</label>
@@ -68,12 +79,7 @@
  
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="file">File</label>
-                        <div class="col-md-9">
-                            <input id="file" name="file" class="input-file" type="file">
-                        </div>
-                    </div>
+
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="submit"></label>
                         <div class="col-md-9">

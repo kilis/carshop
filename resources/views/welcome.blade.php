@@ -69,8 +69,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
         </div>
     </div> <!--/ .container -->
-	<div id="search" class="col-lg-4 pull-right">
-	{{ Form::open(['id' => 'partsearch']) }}
+	<!--/ . <div id="search" class="col-lg-4 pull-right">
+	 {{ Form::open(['id' => 'partsearch']) }}
 		{{ Form::label('year', 'Year') }}
 		{{ Form::selectYear('year', 1982, 2016,  ['id' => 'caryear','class' => 'field']) }}
 		{{ Form::label('manifacture', 'Make') }}
@@ -79,7 +79,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 		{{ Form::select('conditon', ['New', 'Used']) }}</br>
 		{{ Form::submit('Search!', ['id' => 'search_sub', 'class' =>'btn btn-primary']) }}
 	{{ Form::close() }}
-	</div>
+	</div> -->
 </div><!--/ #headerwrap -->
 
 
@@ -108,38 +108,6 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <hr>
     </div> <!--/ .container -->
 </div><!--/ #introwrap -->
-
-<section id="showcase" name="showcase"></section>
-<div id="showcase">
-    <div class="container">
-        <div class="row">
-            <br>
-            <div class="col-lg-8 col-lg-offset-2">
-                <div id="carousel-example-generic" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="{{ asset('/img/item-01.png') }}" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="{{ asset('/img/item-02.png') }}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div><!-- /container -->
-</div>
-
 
 <section id="contact" name="contact"></section>
 <div id="footerwrap">

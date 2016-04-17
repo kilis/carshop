@@ -34,7 +34,6 @@ Laravel dynamic menu
 Menu::make('MyNavBar', function($menu){
 
   $menu->add('Sākums','./');
-  $menu->add('Ražotāji');
   $menu->add('Detaļas', URL::route('parts'));
   $menu->add('Kontakti', URL::route('contact'));
 

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+{!! HTML::style('/assets/css/dropzone.css') !!}
 @section('htmlheader_title')
 	Parts
 @endsection
@@ -28,4 +28,7 @@
 			</div>
 		</div>
 	</div>
+	
+{!! HTML::script('/assets/js/dropzone.js') !!}
+{!! HTML::script('/assets/js/dropzone-config.js') !!}
 @endsection

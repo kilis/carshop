@@ -155,3 +155,28 @@ ls
 composer install
 composer require intervention/image
 composer require intervention/image
+ls
+php artisan bundle:install juploader
+php artisan 
+composer update
+php artisan vendor:publish  
+php artisan migrate
+git add .
+git commit -a
+git commit -a
+git commit -a
+git commit -m "drag and drop"
+top
+git commit -a
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.
+cd .git/
+ls
+rm index.lock 
+cd ..
+git add .
+git commit -m "drag and drop"
+git push
+exit
+exit

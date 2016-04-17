@@ -62,9 +62,8 @@
 									src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 									data-key="pk_test_VxO287KZtsvExEvWOvUE73xY"
 									data-amount="{{$total*100}}"
-									data-name="CODETutorial.IO"
+									data-name="Partio"
 									data-description="Products"
-									data-image="/128x128.png"
 									data-locale="auto">
 							</script>
 						</form>
